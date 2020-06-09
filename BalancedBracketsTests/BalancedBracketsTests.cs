@@ -7,32 +7,11 @@ namespace BalancedBracketsTests
     public class BalancedBracketsTests
     {
         // TODO: Add tests to this file.
-      [TestInitialize]
-        public void CreateTestStringsDict()
+        [TestMethod]
+        public void EmptyTest()
         {
-            testStrings[0] = null;
-            testStrings[1] = "Launch[Code]";
-            testStrings[2] = "";
-            testStrings[3] = "[]";
-            testStrings[4] = "[[]]";
-            testStrings[5] = "][";
-            testStrings[6] = "[Launch";
-            testStrings[7] = "Launch]Code[";
-            testStrings[8] = "[]LaunchCode";
-            testStrings[9] = "[";
-            testStrings[10] = "]";
-            testStrings[11] = "[][";
+            Assert.AreEqual(true, true);
         }
-        /* foreach (KeyValuePair<int, string> testString in testStrings)
-            {
-                Assert.IsTrue(BalancedBrackets.HasBalancedBrackets(testString.Value));
-            } */
-
-        //[TestMethod]
-        //public void EmptyTest()
-        //{
-        //    Assert.AreEqual(true, true);
-        //}
         
         [TestMethod]
         public void OnlyBracketsReturnsTrue()
